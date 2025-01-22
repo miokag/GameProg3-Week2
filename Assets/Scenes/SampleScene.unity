@@ -870,10 +870,17 @@ GameObject:
   - component: {fileID: 1635615366}
   - component: {fileID: 1635615365}
   - component: {fileID: 1635615364}
-  - component: {fileID: 1635615369}
+  - component: {fileID: 1635615377}
+  - component: {fileID: 1635615376}
+  - component: {fileID: 1635615375}
+  - component: {fileID: 1635615374}
+  - component: {fileID: 1635615373}
   - component: {fileID: 1635615363}
   - component: {fileID: 1635615367}
   - component: {fileID: 1635615368}
+  - component: {fileID: 1635615372}
+  - component: {fileID: 1635615371}
+  - component: {fileID: 1635615370}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1095,7 +1102,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1635615369
+--- !u!114 &1635615370
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1104,21 +1111,110 @@ MonoBehaviour:
   m_GameObject: {fileID: 1635615362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 613e760622c1581488f7fe4f724f81f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 268adf2997a052d4ab4b2c237dccbb7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  acceleration: 0
+  deceleration: 0
+--- !u!114 &1635615371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635615362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d130fd3ed2ffd45a1a80695cec4f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1635615372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635615362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d425e4b4d03324aadb2f2b41b4754e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particleSystem: {fileID: 0}
+--- !u!114 &1635615373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635615362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5e7fd2e1fdc5e45b67966e2d8205d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!114 &1635615374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635615362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9cd07a4a6089c04b86a7e37c2536395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forwardKey: 119
+  backwardKey: 115
+  leftKey: 97
+  rightKey: 100
+--- !u!114 &1635615375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635615362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d425e4b4d03324aadb2f2b41b4754e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1635615367}
+  particleSystem: {fileID: 2067789869}
+--- !u!114 &1635615376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635615362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d130fd3ed2ffd45a1a80695cec4f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1635615377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635615362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 268adf2997a052d4ab4b2c237dccbb7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
   acceleration: 10
   deceleration: 5
-  forwardKey: 119
-  backwardKey: 115
-  leftKey: 97
-  rightKey: 100
-  audioSource: {fileID: 1635615367}
-  partSys: {fileID: 2067789869}
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!1 &1855708776
 GameObject:
   m_ObjectHideFlags: 0
